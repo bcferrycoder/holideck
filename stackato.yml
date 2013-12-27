@@ -1,0 +1,11 @@
+name: holideck
+framework:
+  type: python
+mem: 128M
+requirements:
+  pypm:
+    - bottle
+processes:
+  web: python holideck.py
+services:
+  holideck-apps: harbor
